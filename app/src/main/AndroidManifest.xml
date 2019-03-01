@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.weima.aishangyi">
+
+    <permission
+        android:name="com.weima.aishangyi.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.weima.aishangyi.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Required  定位包、导航包需要的额外权限（注：基础权限也需要）-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <application
+        android:name="com.weima.aishangyi.app.WMApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.weima.aishangyi.activity.LoadingActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weima.aishangyi.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.weima.aishangyi.base.BaseWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.HomeSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.AnswerSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.AnswerDetailAcitity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.AnswerUnpayDetailAcitity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.TimePickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.BuyMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.AnswerMineDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.AnswerQuestionAcitity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.SelectCityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.SelectAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".map.AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.MsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.SysMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.TeacherListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.TeacherSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.TeacherDetailAcitity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.ClassListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.ClassSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.ClassDetailAcitity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.OrgSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OrderPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.UserLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.UserForgetPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.UserRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.UserAgreementActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.UserFeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.UserHelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.weima.aishangyi.activity.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <!--我的账户-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserAccountActivity"
+            android:screenOrientation="portrait" />
+        <!--联系人-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserContactActivity"
+            android:screenOrientation="portrait" />
+        <!--账户充值-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserRechargeActivity"
+            android:screenOrientation="portrait" />
+        <!--提现-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserWithdrawCashActivity"
+            android:screenOrientation="portrait" />
+        <!--账号管理-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserAccountManagerActivity"
+            android:screenOrientation="portrait" />
+        <!--收支明细-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserPaymentDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--课程/科室订单-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserClassroomOrderActivity"
+            android:screenOrientation="portrait" />
+        <!--活动订单-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserActivityOrderActivity"
+            android:screenOrientation="portrait" />
+        <!--我的收藏-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserCollectActivity"
+            android:screenOrientation="portrait" />
+        <!--我的课表-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserTimetableActivity"
+            android:screenOrientation="portrait" />
+        <!--我的优惠券-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserCouponsActivity"
+            android:screenOrientation="portrait" />
+        <!--设置-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserSettingActivity"
+            android:screenOrientation="portrait" />
+        <!--我的问答-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserAnswerActivity"
+            android:screenOrientation="portrait" />
+        <!--我的提问-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserQuestionActivity"
+            android:screenOrientation="portrait" />
+        <!--我的围观-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserAnswerSeeActivity"
+            android:screenOrientation="portrait" />
+        <!--手机号-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserphoneActivity"
+            android:screenOrientation="portrait" />
+        <!--手机号-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserphoneBActivity"
+            android:screenOrientation="portrait" />
+        <!--常见问题-->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activity.ProblemActivity" />
+        <!--关注的个人主页-->
+        <activity
+            android:name=".activity.PersonInfoActivity"
+            android:screenOrientation="portrait" />
+        <!--邀请好友-->
+        <activity
+            android:name="com.weima.aishangyi.activity.UserInviteActivity"
+            android:screenOrientation="portrait" />
+        <!--爱尚艺客户端-->
+        <activity
+            android:name="com.weima.aishangyi.activity.AiShangYiClientActivity"
+            android:screenOrientation="portrait" />
+        <!--活动课堂-->
+        <activity
+            android:name="com.weima.aishangyi.activity.ActivityClassListActivity"
+            android:screenOrientation="portrait" />
+        <!--活动课堂详情-->
+        <activity
+            android:name="com.weima.aishangyi.activity.ActivityClassDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--才艺圈-->
+        <activity
+            android:name="com.weima.aishangyi.activity.TalentCircleActivity"
+            android:screenOrientation="portrait" />
+        <!--才艺资讯-->
+        <activity
+            android:name="com.weima.aishangyi.activity.TalentQueryActivity"
+            android:screenOrientation="portrait" />
+        <!--才艺资讯详情-->
+        <activity
+            android:name="com.weima.aishangyi.activity.TalentqueryDetailAcitity"
+            android:screenOrientation="portrait" />
+        <!--发布动态-->
+        <activity
+            android:name="com.weima.aishangyi.activity.TalentPostActivity"
+            android:screenOrientation="portrait" />
+        <!--用户才艺圈-->
+        <activity
+            android:name=".activity.MyTelantCircleActivity"
+            android:screenOrientation="portrait" />
+        <!--动态详情-->
+        <activity
+            android:name="com.weima.aishangyi.activity.TalentCircleDetailAcitity"
+            android:screenOrientation="portrait" />
+        <!--附近的人-->
+        <activity
+            android:name="com.weima.aishangyi.activity.NearbyActivity"
+            android:screenOrientation="portrait" />
+        <!--课程订单详情-->
+        <activity
+            android:name="com.weima.aishangyi.activity.ClassroomOrderDetailAcitity"
+            android:screenOrientation="portrait" />
+        <!--活动订单详情-->
+        <activity
+            android:name="com.weima.aishangyi.activity.ActvityOrderDetailAcitity"
+            android:screenOrientation="portrait" />
+        <!--消息详情-->
+        <activity
+            android:name="com.weima.aishangyi.activity.MsgDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--课程订单评价-->
+        <activity
+            android:name="com.weima.aishangyi.activity.EvaluateActivity"
+            android:screenOrientation="portrait" />
+        <!--课程分类-->
+        <activity
+            android:name=".activity.ClassTypeActivity"
+            android:screenOrientation="portrait" />
+
+        <!--关于我们-->
+        <activity
+            android:name="com.weima.aishangyi.activity.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <!--立即申请-->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activity.EnrollApplyActivity" />
+        <!--订单支付-->
+        <!--购买课程-->
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".activity.BuyClassActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <!--支付订单-->
+
+        <!--图片查看-->
+        <activity
+            android:name=".activity.ImagesBroswerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <!--图片查看-->
+        <activity
+            android:name=".activity.ImagesBroswer1Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <!--图片多选页面-->
+        <activity
+            android:name="me.nereo.multi_image_selector.MultiImageSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat.MyChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat.MyConversationListActivity"
+            android:screenOrientation="portrait" />
+
+        <!--分享-->
+        <activity
+            android:name=".activity.ShareActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ActivityDialog">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--QQ授权登录-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1105950270" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--QQ授权登录-->
+
+        <!--微信授权登录-->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="wx48548a71fa92efed" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <!--微信授权登录-->
+
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <!-- alipay sdk end -->
+
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle"></activity>
+
+        <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />s
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.weima.aishangyi" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+
+        <!-- Required SDK 核心功能-->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+                <category android:name="com.weima.aishangyi" />
+            </intent-filter>
+
+        </service>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.weima.aishangyi" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+
+        </receiver>
+
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器-->
+        <receiver
+            android:name=".receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.weima.aishangyi" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 环信 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="19901117#aishangyi" />
+        <!-- 声明sdk所需的service -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <!-- 声明sdk所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="bK8BWGLenG5evcrufDbvjOhEFHa1TbDp" />
+        <!-- 环信 -->
+
+        <!-- 极光 -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="d26e6528f4a364871b0e1416" />
+        <!-- 高德-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="9ffab58f08aa7a74e4458f3ce4c4c0c3" />
+        <!-- 定位需要的服务 使用2.0的定位需要加上这个 -->
+        <service android:name="com.amap.api.location.APSService"></service>
+        <service android:name=".service.RefreshTokenService"></service>
+        <service android:name=".service.GetClassService"></service>
+        <service android:name=".service.GetCommonDataService"></service>
+    </application>
+
+</manifest>

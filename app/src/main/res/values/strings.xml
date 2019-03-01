@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">爱尚艺学生端</string>
+    <string name="action_settings">设置</string>
+    <string name="dialog_buy">充值会员</string>
+    <string name="dialog_positive">确 定</string>
+    <string name="dialog_negative">取 消</string>
+</resources>

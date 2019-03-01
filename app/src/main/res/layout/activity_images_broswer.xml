@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/full_image_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" >
+
+    <com.weima.aishangyi.widget.WheelViewPager
+        android:id="@+id/vip_image_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/imv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:visibility="invisible"
+        android:src="@drawable/ic_msg" />
+
+    <TextView
+        android:id="@+id/txv_pager_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/imv_download"
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+
+</RelativeLayout>

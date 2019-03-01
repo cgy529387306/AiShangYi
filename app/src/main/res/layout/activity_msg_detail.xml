@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:text="课程订单"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/common_text_large" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_msg_line" />
+
+
+    <TextView
+        android:id="@+id/txv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="消息消息消息消息消息消息消息消息消息消息消息消息"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/common_text" />
+
+    <TextView
+        android:id="@+id/txv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="right"
+        android:text="2016-07-09"
+        android:textColor="@color/base_gray"
+        android:textSize="@dimen/common_text" />
+</LinearLayout>
+

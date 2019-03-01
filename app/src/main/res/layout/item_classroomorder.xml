@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imv_icon"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bg_orderdetail" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txv_classname"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="现代舞"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/common_text" />
+                <TextView
+                    android:id="@+id/txv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="待评价"
+                    android:textColor="@color/base_orange"
+                    android:textSize="@dimen/common_text" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txv_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:singleLine="true"
+                android:text="蔡老师"
+                android:textColor="@color/base_gray"
+                android:textSize="@dimen/common_text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txv_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="一对一课程"
+                    android:textColor="@color/base_gray"
+                    android:textSize="@dimen/common_text_small" />
+                <TextView
+                    android:id="@+id/txv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="1课时"
+                    android:textColor="@color/base_gray"
+                    android:textSize="@dimen/common_text_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txv_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="¥25"
+            android:textColor="@color/base_red"
+            android:textSize="@dimen/common_text" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/cancelOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_find_grey"
+            android:gravity="center"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:text="取消订单"
+            android:textColor="@color/base_gray"
+            android:textSize="@dimen/common_text_small" />
+        <TextView
+            android:id="@+id/comfirmOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_rect_txv_orange"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="确认授课"
+            android:textColor="@color/base_orange"
+            android:textSize="@dimen/common_text_small" />
+    </LinearLayout>
+</LinearLayout>

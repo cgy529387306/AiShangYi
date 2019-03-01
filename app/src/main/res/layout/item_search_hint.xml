@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/online_user_list_item_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_list_no_boder"
+    android:padding="10dp"
+    android:text="福州"
+    android:textColor="@color/text_color"
+    android:textSize="@dimen/common_text" />

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txv_problem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首先，背单词，单词是基础，一定要把单词记熟，背单词。睡前背，早上起来背，效果最好。那你的情况，背单词的时候一定要把读音结合上一块背。"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/common_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.weima.aishangyi.widget.CircleImageView
+            android:id="@+id/imv_teacher_avater"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_avatar_default"
+            app:border_color="@color/transparent"
+            app:border_width="0.0dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txv_teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张老师"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_text" />
+
+            <TextView
+                android:id="@+id/txv_teacher_goodat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="听说该老师是全能型的哦"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/common_text_small" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/btn_question"
+            android:layout_width="48dp"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:background="@drawable/shape_txv_orange_rect"
+            android:text="提问"
+            android:textColor="@color/base_orange"
+            android:textSize="@dimen/common_text_small"/>
+        <TextView
+            android:id="@+id/txv_words_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_anwser_word"
+            android:drawablePadding="4dp"
+            android:text="124字"
+            android:textColor="@color/base_gray"
+            android:textSize="@dimen/common_text_small" />
+        <TextView
+            android:id="@+id/txv_good_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/ic_answer_good"
+            android:drawablePadding="4dp"
+            android:text="234"
+            android:textColor="@color/base_gray"
+            android:textSize="@dimen/common_text_small" />
+        <TextView
+            android:id="@+id/txv_see_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/ic_answer_see"
+            android:drawablePadding="4dp"
+            android:text="234"
+            android:textColor="@color/base_gray"
+            android:textSize="@dimen/common_text_small" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/btn_operate"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@color/base_orange"
+            android:text="看答案"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/common_text_small" />
+    </LinearLayout>
+</LinearLayout>

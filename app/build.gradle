@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.weima.aishangyi"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 101
+        versionName "1.0.1"
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    //配置keystore签名
+    signingConfigs {
+        release {
+            storeFile file("weima.jks")
+            storePassword "weima2016"
+            keyAlias "weima"
+            keyPassword "weima2016"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v4'
+        all*.exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:appcompat-v7:23.0.1'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    task nativeLibsToJar(type: Zip, description: "create a jar archive of the native libs") {
+        destinationDir file("$projectDir/libs")
+        baseName "Native_Libs2"
+        extension "jar"
+        from fileTree(dir: "libs", include: "**/*.so")
+        into "lib"
+    }
+
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn(nativeLibsToJar)
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.jude:rollviewpager:1.3.2'
+    compile 'com.android.support:design:23.0.1'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile project(':lib_utils')
+    compile project(':easeui')
+    compile files('libs/alipaySdk-20170309.jar')
+    compile files('libs/jcore-android_v1.1.1.jar')
+    compile files('libs/jpush-android_v3.0.3.jar')
+    compile files('libs/mta-sdk-1.6.2.jar')
+    compile files('libs/open_sdk_r5756.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/weibosdkcore_release.jar')
+    compile project(':multi-image-selector')
+    compile(name: 'mypicker-release', ext: 'aar')
+    compile 'com.uwetrottmann.photoview:library:1.2.4'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    // 图像剪切
+    compile('com.kevin:crop:1.0.2') {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+}

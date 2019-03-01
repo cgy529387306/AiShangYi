@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imv_coupon_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_coupuns_red" />
+
+    <TextView
+        android:id="@+id/txv_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/txv_text"
+        android:text="DISCOUNT"
+        android:textColor="@color/text_color"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/txv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txv_discount"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/txv_text1"
+        android:text="¥50"
+        android:textColor="@color/base_red"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/txv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="平台优惠券"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_large" />
+
+    <TextView
+        android:id="@+id/txv_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txv_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="可用于购买课程或者活动课堂的费用"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_small" />
+</RelativeLayout>

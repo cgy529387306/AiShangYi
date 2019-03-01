@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_list_no_boder"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/base_orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="报名活动"
+                android:textColor="@color/base_orange"
+                android:textSize="@dimen/common_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_list_no_boder"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txv_activity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="户外单车团建活动"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/common_text" />
+
+            <TextView
+                android:id="@+id/txv_activity_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="¥50"
+                android:textColor="@color/base_red_light"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/common_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/background_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_list_no_boder"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/base_orange" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="报名人数"
+                android:textColor="@color/base_orange"
+                android:textSize="@dimen/common_text" />
+
+            <ImageView
+                android:id="@+id/btnReduce"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_reduce" />
+
+            <EditText
+                android:id="@+id/edit_count"
+                android:layout_width="44dp"
+                android:layout_height="28dp"
+                android:background="@drawable/bg_list_both_border_normal"
+                android:gravity="center"
+                android:text="1"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/common_text" />
+
+            <ImageView
+                android:id="@+id/btnAdd"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_add" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/background_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/btn_list_no_boder"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/base_orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="联系方式"
+                android:textColor="@color/base_orange"
+                android:textSize="@dimen/common_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_list_no_boder"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系人"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/common_text" />
+
+            <EditText
+                android:id="@+id/edit_user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/common_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/line_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_list_no_boder"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系电话"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/common_text" />
+
+            <EditText
+                android:id="@+id/edit_user_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:inputType="phone"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="right"
+                android:hint="请输入"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/common_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/background_color" />
+
+        <EditText
+            android:id="@+id/edit_user_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="请填写备注说明"
+            android:minHeight="180dp"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/common_text_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="共计："
+            android:textColor="@color/base_red"
+            android:textSize="@dimen/common_text" />
+
+        <TextView
+            android:id="@+id/txv_all_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥25"
+            android:textColor="@color/base_red"
+            android:textSize="@dimen/common_text" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/btn_commit"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:background="@color/base_orange"
+            android:gravity="center"
+            android:text="立即支付"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text" />
+
+    </LinearLayout>
+</LinearLayout>

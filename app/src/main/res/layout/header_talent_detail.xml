@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imv_detail_img"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_test_wheel" />
+
+        <LinearLayout
+            android:id="@+id/lin_teacher_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_detail_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:singleLine="true"
+                android:text="张碧晨《不要忘记我爱你》"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/common_text_large" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txv_create_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="2016-09-10"
+                    android:textSize="@dimen/common_text" />
+
+                <TextView
+                    android:id="@+id/txv_thumb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/ic_zan"
+                    android:drawablePadding="6dp"
+                    android:text="24人"
+                    android:textSize="@dimen/common_text" />
+
+                <TextView
+                    android:id="@+id/txv_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="10dp"
+                    android:drawableLeft="@drawable/ic_collect_talentquery"
+                    android:drawablePadding="6dp"
+                    android:text="24人"
+                    android:textSize="@dimen/common_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/background_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/base_orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="详情介绍"
+                android:textColor="@color/base_orange"
+                android:textSize="@dimen/common_text" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/line_color" />
+
+
+        <TextView
+            android:id="@+id/txv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="中国水墨画协会主办以“形而上下”为主题的水墨画展览，将在广州国际金融中心展馆展出，本次展会是我国国际文化艺术节的重要展览之一。"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/common_text" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/background_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/base_orange" />
+
+            <TextView
+                android:id="@+id/txv_comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="全部评论(0)"
+                android:textColor="@color/base_orange"
+                android:textSize="@dimen/common_text" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

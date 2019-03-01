@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="暂无订单"
+        android:textColor="#C4C4C4"
+        android:textSize="@dimen/common_text_large" />
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:background="@color/line_color" />-->
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:background="@color/line_color" />-->
+    <!--<com.mb.android.utils.view.LoadingView-->
+    <!--android:id="@+id/loadingView"-->
+    <!--app:bGradient="false"-->
+    <!--app:radius="50dp"-->
+    <!--app:bg_transparent="false"-->
+    <!--app:circleColor="@color/base_orange"-->
+    <!--android:background="@color/background_color"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="visible"/>-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/emptyview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/ic_tab_home"/>-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="暂无订单"-->
+    <!--android:textSize="@dimen/common_text_large"-->
+    <!--android:textColor="#C4C4C4"-->
+    <!--android:layout_marginTop="15dp"/>-->
+    <!--</LinearLayout>-->
+    <!--<com.weima.aishangyi.xlistview.XListView-->
+    <!--android:id="@+id/contact_list"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:divider="#00000000"-->
+    <!--android:overScrollMode="never"-->
+    <!--android:dividerHeight="0dp"-->
+    <!--android:cacheColorHint="#00000000"-->
+    <!--android:fadingEdge="none">-->
+    <!--</com.weima.aishangyi.xlistview.XListView>-->
+</LinearLayout>

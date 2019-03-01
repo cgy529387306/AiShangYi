@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="common_text">16dp</dimen>
+    <dimen name="common_text_small">14dp</dimen>
+    <dimen name="common_text_large">18dp</dimen>
+    <dimen name="common_text_mini">12dp</dimen>
+    <dimen name="common_text_actionbar">20dp</dimen>
+</resources>

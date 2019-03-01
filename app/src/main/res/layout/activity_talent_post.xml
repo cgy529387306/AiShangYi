@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp" >
+        <com.weima.aishangyi.widget.ClearableEditText
+            android:id="@+id/add_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="说点什么吧..."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color" />
+        <com.weima.aishangyi.widget.NestedGridView
+            android:id="@+id/add_pic_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="3"
+            android:paddingTop="10dp"
+            android:stretchMode="columnWidth" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_list_bottom_border"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_answer_see"
+                android:drawablePadding="10dp"
+                android:text="谁可以看"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/common_text" />
+            <TextView
+                android:id="@+id/btn_select_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/common_icon_arrow"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:text="公开"
+                android:textColor="@color/base_gray"
+                android:textSize="@dimen/common_text" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_list_bottom_border"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_location_gray"
+                android:drawablePadding="10dp"
+                android:text="地点"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/common_text" />
+            <TextView
+                android:id="@+id/btn_select_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/common_icon_arrow"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:text="请选择"
+                android:textColor="@color/base_gray"
+                android:textSize="@dimen/common_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

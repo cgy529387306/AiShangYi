@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_list_no_boder"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <com.weima.aishangyi.widget.CircleImageView
+        android:id="@+id/imv_user_avater"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_avatar_default"
+        app:border_color="@color/transparent"
+        app:border_width="0.0dp" />
+
+    <TextView
+        android:id="@+id/txv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="陈秋梅"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/common_text" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/imv_concern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_fans_none" />
+</LinearLayout>
+

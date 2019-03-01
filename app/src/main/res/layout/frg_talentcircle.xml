@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/ic_msg"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="4条新消息"
+        android:textColor="@color/base_orange"
+        android:textSize="@dimen/common_text" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/common_listview"/>
+</LinearLayout>

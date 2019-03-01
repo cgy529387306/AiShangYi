@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_list_no_boder"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.weima.aishangyi.widget.CircleImageView
+            android:id="@+id/imv_user_avater"
+            app:border_color="@color/transparent"
+            app:border_width="0.0dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_avatar_default" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/ic_tag_question"
+                android:singleLine="true"
+                android:text="周杰伦"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_text" />
+
+            <TextView
+                android:id="@+id/txv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="2016-09-09 20:00"
+                android:textColor="@color/base_gray"
+                android:textSize="@dimen/common_text_small" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:text="冷咖啡离开了杯垫,我忍住的情绪在很后面,拼命想挽回的从前,在我脸上依旧清晰可见,最美的不是下雨天,是曾与你躲过雨的屋檐"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/common_text_small" />
+</LinearLayout>

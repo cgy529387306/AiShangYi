@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_location_orange"
+        android:drawablePadding="6dp"
+        android:text="定位城市"
+        android:singleLine="true"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/common_text" />
+    <TextView
+        android:id="@+id/txv_current_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="定位中..."
+        android:singleLine="true"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/common_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ic_open_city"
+        android:drawablePadding="6dp"
+        android:text="已开通的服务城市"
+        android:singleLine="true"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/common_text" />
+</LinearLayout>

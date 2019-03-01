@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基本颜色 -->
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#88000000</color>
+
+
+    <!-- 项目基本颜色-->
+    <!-- 橘色 -->
+    <color name="base_orange">#feba32</color>
+    <color name="base_orange_light">#fada9c</color>
+    <!-- 红色 -->
+    <color name="base_red">#ff4543</color>
+    <!-- 粉红色 -->
+    <color name="base_pink">#ff6d73</color>
+    <!-- 浅红色 -->
+    <color name="base_red_light">#ff3e4e</color>
+    <!-- 灰色 -->
+    <color name="base_gray">#999999</color>
+    <!-- 蓝色 -->
+    <color name="base_blue">#278dca</color>
+    <!-- 浅蓝色 -->
+    <color name="base_blue_light">#3b98fb</color>
+    <!-- 绿色 -->
+    <color name="base_green">#7cd24c</color>
+    <!-- 绿色 -->
+    <color name="base_green_light">#1edcad</color>
+    <!-- 页面背景颜色 -->
+    <color name="background_color">#F8F8F8</color>
+    <!-- 字体颜色 -->
+    <color name="text_color">#333333</color>
+    <!-- 分割线颜色-->
+    <color name="line_color">#dcdcdc</color>
+    <!-- 输入框提示-->
+    <color name="hint_color">#c0c0c0</color>
+</resources>
