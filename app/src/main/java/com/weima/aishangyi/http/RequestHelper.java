@@ -160,6 +160,7 @@ public class RequestHelper {
 		request.setRetryPolicy(new DefaultRetryPolicy(timeoutMs, 1, 1f));
 		// 以包名作为tag
 		request.setTag(MBApplication.getInstance().getPackageName());
+//		request.setShouldCache(false)
 		sQueue.add(request);
 	}
 	// endregion 网络请求
@@ -683,7 +684,9 @@ public class RequestHelper {
 	}
 
 	private static Response.ErrorListener genErrorListener(final RequestEntity fEntity, final ResponseListener fListener,
+
                                                            final Object... fExtras) {
+
 		return new Response.ErrorListener() {
 			@Override
 			public void onErrorResponse(VolleyError error) {
